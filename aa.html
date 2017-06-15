@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="resource/bootstrap.min.css">
+    <style>
+    /*.wrap-box{*/
+        /*width: 200px;*/
+        /*height: 200px;*/
+        /*margin: 50px auto;*/
+        /*position: relative;*/
+        /*border:1px solid #ddd;*/
+    /*}*/
+    /*.wrap{*/
+        /*width: 100px;*/
+        /*height: 200px;*/
+        /*position: absolute;*/
+        /*top:0;*/
+        /*!*overflow: hidden;*!*/
+    /*}*/
+    /*.right{*/
+        /*right:0px;*/
+    /*}*/
+    /*.left{*/
+        /*left:0px;*/
+    /*}*/
+    /*.circleProgress{*/
+        /*width: 200px;*/
+        /*height: 200px;*/
+        /*border:20px solid transparent;*/
+        /*border-radius: 50%;*/
+        /*position: absolute;*/
+        /*top:0;*/
+    /*}*/
+    /*.rightcircle{*/
+        /*border-top:20px solid darksalmon;*/
+        /*border-right:20px solid darksalmon;*/
+        /*right:0px;*/
+        /*transform: rotate(45deg);*/
+
+    /*}*/
+    /*.leftcircle{*/
+        /*border-bottom:20px solid darksalmon;*/
+        /*border-left:20px solid darksalmon;*/
+        /*left:0px;*/
+        /*transform: rotate(-135deg);*/
+        /*animation: leftz 1s linear;*/
+        /*animation-fill-mode: forwards;*/
+    /*}*/
+        /*@-webkit-keyframes leftz {*/
+            /*0%{*/
+                /*transform: rotate(-135deg);*/
+            /*}*/
+            /*25%{*/
+                /*transform: rotate(-90deg);*/
+            /*}*/
+            /*50%{*/
+                /*transform: rotate(-45deg);*/
+            /*}*/
+            /*100%{*/
+                /*transform: rotate(0deg);*/
+            /*}*/
+        /*}*/
+        /*.wrap-box{*/
+            /*position: relative;*/
+            /*width:160px;*/
+            /*height:160px;*/
+            /*background-color: black;*/
+            /*!*border:20px solid red;*!*/
+            /*border-radius: 50% ;*/
+            /*margin:50px auto;*/
+        /*}*/
+        /*.box{*/
+            /*position: absolute;*/
+            /*width:160px;*/
+            /*height:160px;*/
+            /*border: 20px solid yellow;*/
+            /*border-radius: 50% ;*/
+            /*clip: rect(auto, auto, auto, auto);*/
+
+        /*}*/
+        /*.wrap{*/
+            /*position: absolute;*/
+            /*width:160px;*/
+            /*border-radius: 50% ;*/
+            /*height:160px;*/
+            /*border:20px solid green;*/
+            /*left: -20px;*/
+            /*top:-20px;*/
+        /*}*/
+        /*.left{*/
+            /*transform: rotate(324deg);*/
+            /*clip: rect( 0 80px 160px 0);*/
+            /*transition: 4s;*/
+        /*}*/
+        /*.right{*/
+            /*clip: rect(0,160px,160px,80px);*/
+        /*}*/
+        .box{
+            width:160px;
+            height:160px;
+            border-radius: 50%;
+            background-color: #1b6d85;
+            position: relative;
+            border: 20px solid salmon;
+        }
+        .wrap{
+            width:160px;
+            height:160px;
+            border: 20px solid yellow;
+            position: absolute;
+            border-radius: 50%;
+            top:-20px;
+            overflow: hidden;
+            transform: rotate(-45deg);
+        }
+        .left{
+            left: -20px;
+            animation: leftz 1s linear;
+            animation-fill-mode: forwards;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+        }
+        @-webkit-keyframes leftz {
+            0%{
+                transform: rotate(135deg);
+            }
+            25%{
+                transform: rotate(180deg);
+            }
+            50%{
+                transform: rotate(225deg);
+            }
+            100%{
+                transform: rotate(270deg);
+            }
+        }
+        .right{
+            right: -20px;
+            border-top-color: transparent;
+            border-left-color: transparent;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="wrap-box">-->
+    <!--<div class="wrap right">-->
+        <!--<div class="circleProgress rightcircle"></div>-->
+    <!--</div>-->
+    <!--<div class="wrap left">-->
+        <!--<div class="circleProgress leftcircle"></div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="wrap-box">
+    <div class="box">
+        <div class="wrap left"></div>
+        <div class="wrap right"></div>
+    </div>
+    <div class="num">
+        <span>79%</span>
+    </div>
+</div>
+
+</body>
+</html>
